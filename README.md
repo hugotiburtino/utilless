@@ -23,6 +23,6 @@ list, tuple, set, dict or even str.
 `>>> commaand(['apples', 'bananas', 'tofu', 'cats'])`  
 `'apples, bananas, tofu, and cats'`
 
-or commaand(iterable, str)
+or commaand(iterable, str)  
 `>>> commaand(['apples', 'bananas', 'tofu', 'cats'], ' & ')`  
-`'apples, bananas, tofu, & cats'`
+`'apples, bananas, tofu & cats'`
