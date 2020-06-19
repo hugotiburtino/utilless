@@ -1,4 +1,4 @@
-from comma import commaspace, justcomma
+from comma import commaspace, justcomma, commaand
 
 tuple_spam = ('apples', 'bananas', 'tofu', 'cats')
 list_spam = ['apples', 'bananas', 'tofu', 'cats']
@@ -26,4 +26,18 @@ def test_justcomma():
         assert type(e) == ValueError
     return 'tests passed'
 
+
 test_justcomma()
+
+def test_commaand():
+    assert commaand(tuple_spam) == 'apples, bananas, tofu, and cats'
+    assert commaand(list_spam) == 'apples, bananas, tofu, and cats'
+    assert commaand(all_kinds) == "0, foo, and 1.9"
+    try:
+        commaand([])
+    except Exception as e:
+        assert type(e) == ValueError
+    return 'tests passed'
+
+
+test_commaand()
