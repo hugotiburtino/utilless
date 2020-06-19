@@ -20,12 +20,17 @@ def commator(iterable, binder=',', lastbinder=','):
     # turns all items of iterable into strings
     words = list(map(str, iterable))
 
+    # join words with binder until before the last one,
+    # which is on its turn bound with the lastbinder. See commaand
     return binder.join(words[:len(words) - 1]) + lastbinder + words[-1]
 
 def justcomma(iterable):
     """
     Function that takes a iterable and returns a string
     with all the items separated by a comma
+    Example:
+    justcomma(['apples', 'bananas', 'tofu', 'cats']) =>
+       'apples,bananas,tofu,cats'
     """
     return commator(iterable)
 
@@ -33,13 +38,21 @@ def commaspace(iterable):
     """
     Function that takes a iterable and returns a string
     with all the items separated by a comma and a space.
+    Example:
+    commaspace(['apples', 'bananas', 'tofu', 'cats']) =>
+       'apples, bananas, tofu, cats'
     """
     return commator(iterable, ', ', ', ')
 
-def commaand(iterable):
+def commaand(iterable, lastcomma=', and '):
     """
     Function that takes a iterable and returns a string
     with all the items separated by a comma and a space,
     with and inserted before the last item.
+
+    You can specify a second argument (default = ', and '),
+    like commaand(['comma', 'and', 'dot'], ' & ') => 'comma, and & dot'
+
+
     """
-    return commator(iterable, ', ', ', and ')
+    return commator(iterable, ', ', str(lastcomma))
