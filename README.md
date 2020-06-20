@@ -1,5 +1,9 @@
 # utilless
-Maybe the most useless Python library ever
+Useless library if you have time for puzzles, a useful one if you don't
+
+## Quickstart
+Install using pip: `pip install utilless`  
+and import package into your script, v.g. `from utilless.comma import justcomma`
 
 ## Comma module
 Manipulates iterables and gets results with commas
