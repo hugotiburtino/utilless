@@ -2,13 +2,17 @@
 Unit Tests for the comma module
 """
 
-from comma import commaspace, justcomma, commaand
+from utilless.comma import commaspace, justcomma, commaand
+
 
 tuple_spam = ('apples', 'bananas', 'tofu', 'cats')
 list_spam = ['apples', 'bananas', 'tofu', 'cats']
 all_kinds = [0, 'foo', 1.9]
 # TODO: add test to dict. Ex.: dictio = {'to do': 'play', 'how many times': 100}
 # TODO: test nested iterables. Ex.: [[1, 2], ['foo', 'bar']]
+
+
+# TODO: tests too repetitive. Make it simpler
 
 def test_commaspace():
     "Tests the function commaspace"
