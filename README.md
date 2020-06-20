@@ -3,7 +3,9 @@ Useless library if you have time for puzzles, a useful one if you don't
 
 ## Quickstart
 Install using pip: `pip install utilless`  
-and import package into your script, v.g. `from utilless.comma import justcomma`
+and import package into your script, v.g.  
+`from utilless.comma import commaspace`
+`print(commaspace(['Hello', 'world!']))`
 
 ## Comma module
 Manipulates iterables and gets results with commas
@@ -30,3 +32,11 @@ list, tuple, set, dict or even str.
 or commaand(iterable, str)  
 `>>> commaand(['apples', 'bananas', 'tofu', 'cats'], ' & ')`  
 `'apples, bananas, tofu & cats'`
+
+## Dot module
+Manipulates iterables and gets results with dots
+
+* justdot(iterable)
+
+`>>> justdot(['apples', 'bananas', 'tofu', 'cats'])`  
+`'apples,bananas,tofu,cats'`
