@@ -18,7 +18,7 @@ def justcomma(iterable):
     justcomma(['apples', 'bananas', 'tofu', 'cats']) =>
        'apples,bananas,tofu,cats'
     """
-    return bind(iterable, ',', ',')
+    return bind(iterable, ",", ",")
 
 
 def commaspace(iterable):
