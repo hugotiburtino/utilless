@@ -48,4 +48,3 @@ def test_commaand():
     return 'tests passed'
 
 test_commaand()
-print(commaand(tuple_spam, ' & '))
