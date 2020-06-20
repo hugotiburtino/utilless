@@ -19,7 +19,7 @@ def test_commaspace():
         commaspace([])
     except ValueError as exc:
         assert 'is empty' in str(exc)
-    return 'tests passed'
+    print('test_commaspace passed')
 
 test_commaspace()
 
@@ -32,7 +32,7 @@ def test_justcomma():
         justcomma([])
     except ValueError as exc:
         assert 'is empty' in str(exc)
-    return 'tests passed'
+    print('test_justcomma passed')
 
 test_justcomma()
 
@@ -45,6 +45,6 @@ def test_commaand():
         commaand([])
     except ValueError as exc:
         assert 'is empty' in str(exc)
-    return 'tests passed'
+    print('test_commaand passed')
 
 test_commaand()
