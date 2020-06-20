@@ -56,3 +56,5 @@ def commaand(iterable, lastcomma=', and '):
 
     """
     return commator(iterable, ', ', str(lastcomma))
+
+# TODO: How to handle nested iterables, v.g. [[1, 2], ['foo', 'bar']]

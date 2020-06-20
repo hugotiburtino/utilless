@@ -7,6 +7,8 @@ from comma import commaspace, justcomma, commaand
 tuple_spam = ('apples', 'bananas', 'tofu', 'cats')
 list_spam = ['apples', 'bananas', 'tofu', 'cats']
 all_kinds = [0, 'foo', 1.9]
+# TODO: add test to dict. Ex.: dictio = {'to do': 'play', 'how many times': 100}
+# TODO: test nested iterables. Ex.: [[1, 2], ['foo', 'bar']]
 
 def test_commaspace():
     "Tests the function commaspace"
@@ -32,7 +34,6 @@ def test_justcomma():
         assert 'is empty' in str(exc)
     return 'tests passed'
 
-
 test_justcomma()
 
 def test_commaand():
@@ -47,3 +48,4 @@ def test_commaand():
     return 'tests passed'
 
 test_commaand()
+print(commaand(tuple_spam, ' & '))
