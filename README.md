@@ -4,7 +4,7 @@ Useless library if you have time for puzzles, a useful one if you don't
 ## Quickstart
 Install using pip: `pip install utilless`  
 and import package into your script, v.g.  
-`from utilless.comma import commaspace`
+`from utilless.comma import commaspace`  
 `print(commaspace(['Hello', 'world!']))`
 
 ## Module comma
@@ -38,25 +38,25 @@ Manipulates iterables and gets results with dots
 
 * justdot(iterable)
 
-`>>> justdot(['apples', 'bananas', 'tofu', 'cats'])`  
-`'apples,bananas,tofu,cats'`
+`>>> justdot(['myObject', 'toString()']) => `   
+`'myObject.toString()'`
 
 ## Module iseven
 Infamous function. Learn how to use modulo (%)
 
 * iseven(int)
 
-`>>> iseven(1)`  
-`False`
+`>>> iseven(1)`   
+`False`  
 `>>> iseven(42)`  
-`True`
+`True`  
 
 ## Module isodd 
 See module iseven 
 
 * isodd(int)
 
-`>>> isodd(1)`  
-`True`
-`>>> isodd(42)`  
-`False`
+`>>> isodd(1)`   
+`True`   
+`>>> isodd(42)`   
+`False`  
