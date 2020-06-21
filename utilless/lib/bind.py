@@ -1,3 +1,5 @@
+"Module bind"
+
 def bind(iterable, binder, lastbinder):
     """
     # TODO add better description
